@@ -13,7 +13,11 @@ using BetaCircuit = oc::BetaCircuit;
 using BetaBundle = oc::BetaBundle;
 using GateType = oc::GateType;
 
+namespace mpsu {
+
 BetaCircuit inverse_of_S_box_layer(u8 num_S_box);
 
 // n is power of 2, should evaluate on a 64-bit input
 BetaCircuit lessthanN(u32 n);
+
+}  // namespace mpsu

@@ -5,6 +5,8 @@
 #include <fstream>
 #include <vector>
 
+namespace mpsu {
+
 void ssVODMSend(LowMC &cipher, mMatrix<mblock> &in,
                 BitVector &out, Socket &chl, u32 numThreads,
                 std::string triplePath) {
@@ -121,3 +123,5 @@ void ssVODMRecv(LowMC &cipher, mMatrix<mblock> &in,
     }
     out = ~out;
 }
+
+}  // namespace mpsu

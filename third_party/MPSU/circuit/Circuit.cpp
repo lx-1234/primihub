@@ -4,6 +4,8 @@
 
 #include "Circuit.h"
 
+namespace mpsu {
+
 BetaCircuit inverse_of_S_box_layer(u8 num_S_box) {
     BetaCircuit cd;
 
@@ -72,3 +74,5 @@ BetaCircuit lessthanN(u32 n) {
     cd.levelByAndDepth();
     return cd;
 }
+
+}  // namespace mpsu

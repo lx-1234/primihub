@@ -10,6 +10,7 @@
 
 
 using volePSI::Mode;
+using namespace mpsu;
 
 void Beaver_2party_test(CLP &cmd) {
     u32 numElements = cmd.getOr("n", 1ull << cmd.getOr("nn", 10));

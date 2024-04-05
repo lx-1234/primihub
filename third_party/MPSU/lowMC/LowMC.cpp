@@ -12,6 +12,7 @@
 #include "lowMC/parameter.h"
 #include "LowMC.h"
 
+namespace mpsu {
 
 /////////////////////////////
 //     LowMC functions     //
@@ -500,5 +501,4 @@ bool LowMC::getrandbit() {
     return tmp;
 }
 
-
-
+}  // namespace mpsu

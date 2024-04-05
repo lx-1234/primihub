@@ -7,6 +7,7 @@
 #include "MPSU.h"
 #include "MPSI.h"
 
+using namespace mpsu;
 
 void MPSU_test(u32 idx, u32 numElements, u32 numParties,
                u32 numThreads, bool fakeBase, bool fakeTriples) {

@@ -7,6 +7,8 @@
 #include <string>
 #include "../common/Defines.h"
 
+namespace mpsu {
+
 void mblockReverse(mblock &x);
 
 // Sender holds ciphertext, cipher could be any key,
@@ -17,3 +19,5 @@ void lowMCDecryptGmwSend(LowMC &cipher, mMatrix<mblock> &in,
 // Receiver holds key
 void lowMCDecryptGmwRecv(LowMC &cipher, mMatrix<mblock> &in,
                          Socket &chl, u32 numThreads, std::string triplePath);
+
+}  // namespace mpsu

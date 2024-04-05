@@ -18,6 +18,8 @@ using oc::SoftSpokenShOtReceiver;
 using oc::DefaultBaseOT;
 using oc::AlignedVector;
 
+namespace mpsu {
+
 // set is 64-bit elements
 std::vector<block> MPSUParty(u32 idx, u32 numParties, u32 numElements,
                              std::vector<block> &set, u32 numThreads,
@@ -733,3 +735,5 @@ u32 MPSUCAParty(u32 idx, u32 numParties, u32 numElements,
     }
     return 0;
 }
+
+}  // namespace mpsu

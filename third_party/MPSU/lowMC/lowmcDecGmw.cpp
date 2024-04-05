@@ -8,6 +8,7 @@
 #include <vector>
 #include "../circuit/Circuit.h"
 
+namespace mpsu {
 
 void mblockReverse(mblock &x) {
     u64 l = (x & mblock(0xFFFFFFFFFFFFFFFF)).to_ullong();
@@ -148,3 +149,5 @@ void lowMCDecryptGmwRecv(LowMC &cipher, mMatrix<mblock> &in,
 
     tripleFile.close();
 }
+
+}  // namespace mpsu

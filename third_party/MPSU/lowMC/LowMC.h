@@ -9,6 +9,8 @@
 #include <vector>
 #include <string>
 
+namespace mpsu {
+
 const unsigned numofboxes = 10;    // Number of Sboxes
 const unsigned blocksize = 128;   // Block size in bits
 const unsigned keysize = 128;  // Key size in bits
@@ -78,3 +80,5 @@ class LowMC {
     keyblock getrandkeyblock();
     bool getrandbit();
 };
+
+}  // namespace mpsu

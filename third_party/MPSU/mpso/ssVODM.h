@@ -8,6 +8,7 @@
 #include "../circuit/Circuit.h"
 #include "../lowMC/lowmcDecGmw.h"
 
+namespace mpsu {
 
 void ssVODMSend(LowMC &cipher, mMatrix<mblock> &in,
                 BitVector &out, Socket &chl, u32 numThreads,
@@ -17,3 +18,5 @@ void ssVODMSend(LowMC &cipher, mMatrix<mblock> &in,
 void ssVODMRecv(LowMC &cipher, mMatrix<mblock> &in,
                 BitVector &out, Socket &chl, u32 numThreads,
                 std::string triplePath);
+
+}  // namespace mpsu

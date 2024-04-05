@@ -5,6 +5,8 @@
 
 #include "../common/Defines.h"
 
+namespace mpsu {
+
 u64 L_0[128][2] = {
 0xDE3547D35D776373, 0x7B6EC5825F32786D,
 0xA1BF2597D8732F36, 0x7E52B8560916D23A,
@@ -5397,3 +5399,5 @@ u64 C_18[2] = {
 u64 C_19[2] = {
 0x2678A63BF4F438B2, 0x7C778776BAB589D1,
 };
+
+}  // namespace mpsu

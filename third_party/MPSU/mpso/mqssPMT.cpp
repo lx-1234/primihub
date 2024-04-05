@@ -3,6 +3,8 @@
 
 #include "mqssPMT.h"
 
+namespace mpsu {
+
 void mqssPMTSend(u32 numElements, LowMC &cipher,
                  BitVector &out, std::vector<block> &okvs, Socket &chl,
                  u32 numThreads, std::string triplePath) {
@@ -37,3 +39,5 @@ void mqssPMTRecv(std::vector<block> &set, LowMC &cipher,
     // vodm sender's input is ciphertext
     ssVODMSend(cipher, ct, out, chl, numThreads, triplePath);
 }
+
+}  // namespace mpsu

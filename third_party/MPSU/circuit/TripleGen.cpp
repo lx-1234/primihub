@@ -4,6 +4,7 @@
 #include "TripleGen.h"
 #include <vector>
 
+namespace mpsu {
 
 void twoPartyTripleGen(u32 myIdx, u32 idx, u32 numElements,
                        u32 numThreads, Socket &chl, std::string fileName) {
@@ -104,3 +105,5 @@ void tripleGenParty(u32 idx, u32 numParties, u32 numElements, u32 numThreads) {
         std::cout << timer << std::endl;
     }
 }
+
+}  // namespace mpsu

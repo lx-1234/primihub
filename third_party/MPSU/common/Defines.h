@@ -11,6 +11,7 @@
 #include <coproto/coproto.h>
 #include <volePSI/Paxos.h>
 
+namespace mpsu {
 
 using u8 = oc::u8;
 using u16 = oc::u16;
@@ -48,3 +49,5 @@ constexpr u64 ssp = 40;
 
 // softspokenOT parameter
 constexpr u64 fieldBits = 5;
+
+}  // namespace mpsu

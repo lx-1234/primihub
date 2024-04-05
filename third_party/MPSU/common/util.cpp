@@ -4,6 +4,8 @@
 
 #include "common/util.h"
 
+namespace mpsu {
+
 void permute(std::vector<u32> &pi, std::vector<block> &data) {
     std::vector<block> res(data.size());
     for (size_t i = 0; i < pi.size(); ++i) {
@@ -32,3 +34,5 @@ void bitsetToBlock(std::bitset<128> &data, block &out) {
         (data &
         std::bitset<128>(0xFFFFFFFFFFFFFFFF)).to_ullong());
 }
+
+}  // namespace mpsu

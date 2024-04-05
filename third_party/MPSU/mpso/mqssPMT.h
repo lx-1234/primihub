@@ -9,6 +9,7 @@
 #include "../common/Defines.h"
 #include "../common/util.h"
 
+namespace mpsu {
 
 void mqssPMTSend(u32 numElements, LowMC &cipher,
                  BitVector &out, std::vector<block> &okvs,
@@ -18,3 +19,5 @@ void mqssPMTSend(u32 numElements, LowMC &cipher,
 void mqssPMTRecv(std::vector<block> &set, LowMC &cipher,
                  BitVector &out, Socket &chl,
                  u32 numThreads, std::string triplePath = "");
+
+}  // namespace mpsu
